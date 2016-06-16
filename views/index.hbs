@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>I want CARTOONS!</h1>
+
+<ul>
+  {{#each toons}}
+  <li>
+    <a href="/{{this.id}}">{{this.name}}</a><br>
+    <img src="{{this.image}}" alt="cartoon_AF" />
+  </li>
+  {{/each}}
+</ul>
+<a href="/create">Create a Cartoon</a>
